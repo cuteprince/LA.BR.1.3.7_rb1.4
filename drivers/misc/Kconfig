@@ -648,7 +648,7 @@ config UID_SYS_STATS
 
 config GET_HARDWARE_INFO
 	tristate "get hardware devices info"
-	default y
+	default n
 	help
 	  get the devices info, provide interface.
 
