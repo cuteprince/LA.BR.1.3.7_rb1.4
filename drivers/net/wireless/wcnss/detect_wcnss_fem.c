@@ -26,7 +26,9 @@ void detect_wcnss_fem(void)
     int i;
     int val;
 
+#ifdef CONFIG_GET_HARDWARE_INFO
     obtain_hw_board_id((char*)board_id_buffer);
+#endif
 
     for(i=0; i<BOARD_ID_NUM_WO_FEM; i++)
     {
